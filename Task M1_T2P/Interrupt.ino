@@ -1,7 +1,6 @@
 #define SENSOR_PIN 2
 #define ACTUATOR_PIN 6
-volatile boolean sensorState = false;
-// Volatile to ensure visibility in ISR
+volatile boolean sensorState = false; // Volatile to ensure visibility in ISR
 void setup () {
 pinMode (SENSOR_PIN, INPUT) ; pinMode (ACTUATOR_PIN, OUTPUT) ;
 Serial. begin (9600);
